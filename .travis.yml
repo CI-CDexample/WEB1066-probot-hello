@@ -12,5 +12,5 @@ deploy:
   provider: heroku
   api_key:
     secure: nXRDndChUTr8nJIs1MMouaBDRV7k1Wbbpen87jsKjP0lqVusMmBb4hkhKGUKbh++C5xc+hI5RYccyfeot5QJ/goO9XhLXxNT0npXPAaVXRPqpqiKPU98QFApxHVvazG7Q9X0FD5te67glrBhZCre0qZV3RbBznm7xIrfbmTZI0bBJZcjjC3VT0ASQCb7sa87ZwC1Il4/JDl2zXeV+i5Dqi2EZByrQDdAACrIbWiho43p7+DZaSK2OA/IWeBTpMugNTFvcNDqCOnQRoqw1PlX9e7XMHG60xZ71WjHqRzPtp56GzTDD8aPEJVxJ/dcYxr6DfL874LiALcS2BRNjr/YIJr6w8YiRZh6a+IzKW9PNoMe0gob+U/YXvrnGQrMX9Lfkd08p8cvCMyCvYSEpFxooAnfP9pcA/9SsuqSiPz2rrAE+EbhKz82CkuueiEq/VfyIJoFtCt7QMkmzr7+xj1f4FqpCtSb/kR/2FZ3mGtbj4mj8JHFLPfVnTrdjF9jXw1py6Wc6+GK1ci0ZEVR/Gxf5epO19txxC/Zg9tA+npQZEKz/uehqkL4BOjJDNzLaNfJ1SbUu8rUMq3IOgIkYU5L9RTEcBdxLFu2dk+64SIez5d2Xv9Ll5lUaqQYjcXRi7XqG9hTvNRyM+5T5dor7ANcpZ/kzQ5kWIEHH0pq+EjeIzM=
-on: heroku_production
-app:  probot-webhook
+  on: heroku_production
+  app:  probot-webhook
