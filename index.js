@@ -3,7 +3,6 @@
  * @param {import('probot').Application} app - Probot's Application class.
  */
 module.exports = app => {
-
   // Get an express router to expose new HTTP endpoints
   const router = app.route('/probot')
 
@@ -15,8 +14,8 @@ module.exports = app => {
   const collectDefaultMetrics = client.collectDefaultMetrics
 
   collectDefaultMetrics({register,
-    timeout:  5000,
-    prefix:   'default_'
+    timeout: 5000,
+    prefix: 'default_'
   })
   // register metrics on startup
   const prom = new client.Summary({
@@ -96,7 +95,7 @@ module.exports = app => {
       repository_full_name: context.payload.repository.full_name, // repository.full_name
       repository_name: context.payload.repository.name
     }
-    const duration = new Date(context.payload.check_run.completed_at) - new             Date(context.payload.check_run.started_at)
+    const duration = new Date(context.payload.check_run.completed_at) - new Date(context.payload.check_run.started_at)
 
     app.log('observation.action -> ' + observation.action)
     app.log('observation.name -> ' + observation.name)
